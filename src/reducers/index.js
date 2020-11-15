@@ -4,7 +4,7 @@ import searchReducer from './searchReducer';
 
 const rootReducer = combineReducers({
     testState: testReducer,
-    searchResults: searchReducer
+    searchState: searchReducer
 });
 
 export default rootReducer;

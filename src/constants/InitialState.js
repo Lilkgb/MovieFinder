@@ -1,2 +1,2 @@
 export const initialState = "none";
-export const searchResults = null;
+export const searchState = null;

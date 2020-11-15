@@ -1,10 +1,10 @@
 import * as types from './ActionTypes';
-import {initialState, searchResults} from './InitialState';
+import {initialState, searchState} from './InitialState';
 import firebaseConfig from './firebaseConfig';
 
 export default {
   initialState: initialState,
-  searchResults: searchResults,
+  searchState: searchState,
   firebaseConfig: firebaseConfig,
   types: types
 }
