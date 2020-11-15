@@ -5,8 +5,9 @@ function Header(){
 
   return(
     <div className="header">
-      <Link to='/'>Home</Link>
-      <h2>Welcome New User</h2>
+      <h2 className="customFont home">Movie Finder</h2>
+      <input placeholder="search"/>
+      <h2>user info</h2>
     </div>
   )
 }
