@@ -7,14 +7,23 @@ function Search(){
         setDropDown(!dropDown)
     }
 
+    function startSearch(e){
+        e.preventDefault();
+        console.log("search starting")
+    }
+
     const [dropDown, setDropDown] = useState(false);
     const [searchParam, setSearchParam] = useState("All");
+    const [search, setSearch] = useState("")
 
     return(
         <div className="searchBar">
             <div className="searchContainer">
-                <button onClick={() => setDropDown(!dropDown)}>{searchParam} &#9660;</button>
-                <input placeholder="Search" />
+                <button className="paramButton" onClick={() => setDropDown(!dropDown)}>{searchParam} &#9660;</button>
+                <form onSubmit={startSearch}>
+                    <input placeholder="Search" value={search} onChange={e => setSearch(e.target.value)}/>
+                    <button className="submitButton" type="submit">	&#128269;</button>
+                </form>
             </div>
             <div className={`switch ${dropDown ? "dropDown" : "hide"}`} >
                 <p onClick={() => updateParam("All")}>All</p>

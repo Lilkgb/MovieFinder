@@ -47,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      button{
+      .paramButton{
         padding: 0;
         margin: 0;
         border-radius: 0;
@@ -63,6 +63,10 @@
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
       }
+      form{
+        display: flex;
+        width: 100%;
+      }
       input{
         align-self: center;
         padding: 0px 5px;
@@ -70,9 +74,19 @@
         height: 100%;
         border: none;
         height: 30px;
-        max-width: 80%;
+        max-width: 100%;
         min-width: 30%;
-        width: 80%;
+        width: 100%;
+      }
+      .submitButton{
+        border: 0;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        margin-right: 0px;
+        min-width: 50px;
+        background-color: rgb(236, 236, 236);
+        padding: 0px 5px;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
       }
