@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import {store} from '../index';
+import {searchImdb} from '../actions/index';
 
 function Search(){
 
@@ -9,7 +11,7 @@ function Search(){
 
     function startSearch(e){
         e.preventDefault();
-        console.log("search starting")
+        store.dispatch(searchImdb(search))
     }
 
     const [dropDown, setDropDown] = useState(false);
