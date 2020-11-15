@@ -1,2 +1,2 @@
 export const TEST_FUNCTION = 'TEST_FUNCTION';
-export const SEARCH_IMDB = 'SEARCH_IMDB';
+export const GET_RESULTS_OMDB = 'GET_RESULTS_OMDB';

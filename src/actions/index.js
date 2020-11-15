@@ -11,9 +11,9 @@ export function searchOmdb(searchParam){
   let split = searchParam.replace(" ", "+")
     axios.get(`http://www.omdbapi.com/?apikey=6f0fb35d&s=${split}`).then(res => res.data).then(res => {
         if(!res.Search){
-            let newState = "n/a";
+            store.dispatch();
         } else {
-            store.dispatch(searchImdb(res));
+            store.dispatch(getResultsOmdb(res));
         }
     })
 }
@@ -22,7 +22,7 @@ export const testFunction = () => ({
   type: types.TEST_FUNCTION
 })
 
-export const searchImdb= (searchParam) => ({
-  type: types.SEARCH_IMDB,
+export const getResultsOmdb= (searchParam) => ({
+  type: types.GET_RESULTS_OMDB,
   searchParam
 })

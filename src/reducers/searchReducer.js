@@ -5,7 +5,7 @@ const {types, searchState} = constants
 const searchReducer = (state = searchState, action) => {
   let newState;
   switch (action.type) {
-    case types.SEARCH_IMDB:
+    case types.GET_RESULTS_OMDB:
       newState = state;
        newState = action.searchParam;
       return newState;
