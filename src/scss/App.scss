@@ -32,4 +32,26 @@
     margin: 0;
     padding: 0;
   }
+  .searchBar{
+    button{
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+      height: 27px;
+      margin-right: 0px;
+      background-color: rgb(236, 236, 236);
+      padding: 0px 5px;
+      border: none;
+      font-weight: bold;
+      border-right: 1px solid lightgray;
+    }
+    input{
+      min-width: 20%;
+      max-width: 70%;
+      width: 100%;
+      border-radius: 0;
+      height: 25px;
+      border: none;
+    }
+  }
 }

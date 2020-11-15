@@ -2,7 +2,8 @@ import React from 'react';
 
 function Search(){
     return(
-        <div>
+        <div className="searchBar">
+            <button>ALL &#9660;</button>
             <input placeholder="Search" />
         </div>
     )
