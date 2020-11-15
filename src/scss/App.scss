@@ -25,7 +25,7 @@
   top: 0;
   background-color: #121212;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 25% 50% 25%;
   align-items: center;
   justify-content: center;
   h2{
@@ -33,11 +33,15 @@
     padding: 0;
   }
   .searchBar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     button{
       padding: 0;
       margin: 0;
       border-radius: 0;
-      height: 27px;
+      height: 60%;
       margin-right: 0px;
       background-color: rgb(236, 236, 236);
       padding: 0px 5px;
@@ -46,11 +50,13 @@
       border-right: 1px solid lightgray;
     }
     input{
+      align-self: center;
       min-width: 20%;
       max-width: 70%;
-      width: 100%;
+      width: 70%;
+      padding: 0px 5px;
       border-radius: 0;
-      height: 25px;
+      height: 60%;
       border: none;
     }
   }
