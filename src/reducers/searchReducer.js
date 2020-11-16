@@ -10,7 +10,7 @@ const searchReducer = (state = searchState, action) => {
        newState = action.searchParam.Search;
       return newState;
     case types.ADD_MORE_RESULTS:
-        newState = state;
+        newState = [...state];
         console.log(newState)
         action.searchParam.Search.forEach(function(el) {
             newState.push(el)
