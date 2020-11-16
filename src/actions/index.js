@@ -26,7 +26,7 @@ export function searchOmdb(searchParam){
 export function searchMoreResults(){
     axios.get(`http://www.omdbapi.com/?apikey=6f0fb35d&s=${param}&page=${pageNum}`).then(res => res.data).then(res => {
         if(!res.Search){
-            store.dispatch(addMoreResults("No More Results!"));
+            return false
         } else {
             store.dispatch(addMoreResults(res));
         }
