@@ -1,2 +1,3 @@
 export const TEST_FUNCTION = 'TEST_FUNCTION';
 export const GET_RESULTS_OMDB = 'GET_RESULTS_OMDB';
+export const ADD_MORE_RESULTS = 'ADD_MORE_RESULTS';
